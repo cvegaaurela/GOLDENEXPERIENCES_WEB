@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgba(154, 140, 7, 0.43);
+}
+
+
+.encabezado {
+    background-color: rgb(255, 255, 255);
+    padding: 20px 40px 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.encabezado a:hover {
+        background-color: rgb(162, 160, 34);
+        color: rgb(248, 248, 248);
+       transform: scale(1.1);
+       transition: transform 1.0s ease;
+       border-radius: 15px;
+    }
+
+.encabezado .logo:hover {
+    transform: scale(1.8);
+    transition: transform 0.9s ease;
+}
+.menu a {
+    display: inline-block;
+    color: rgb(121, 124, 27);
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-top: 10px;
+    align-items: left;
+
+}
+
+h1 {
+    color: rgb(121, 124, 27);
+    font-family: 'Trebuchet MS';
+    font-size: 22px;
+    text-align : center;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS';
+    size: 20px;
+}
+
+h3 {
+    color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS';
+    size: 18px;
+}
+
+h4 {
+    color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS';
+    size: 16px;
+}
+
+#intro {
+    background-color: rgb(242, 242, 246);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+
+}
+#intro img {
+    width: 50%;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#productos ul{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr); /* 2 columnas */
+    gap:30px;
+    list-style:none;
+    margin-top:20px;
+}
+#productos li{
+    background:#ffffff;
+    padding:30px;
+    border-radius:20px;
+    border:1px solid rgba(212,175,55,0.2);
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+    transition:0.3s ease;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+#productos li:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 35px rgba(0,0,0,0.08);
+    border-color:#d4af37;
+}
